@@ -1,0 +1,81 @@
+#box0{
+    
+  width: 100%;
+  height: 900px;
+  align-items: center;
+  position: relative;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  
+
+
+   &::before{
+    content: '';
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+   background-image: url("https://www.teahub.io/photos/full/301-3017071_mega-man-x4-high-quality-background-on-wallpapers.jpg"); 
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-size: cover;
+   opacity: 0.6;
+   }
+   
+ }
+ 
+ .seçao{
+    opacity: initial;
+    width: 700px;
+    position: relative;
+    margin: auto;
+ }
+.seçao #box1{
+   align-items: center;
+   margin: auto;
+   text-align: center;
+ }
+ .seçao h1{
+    font-size: 80px;
+    font-style: italic;
+    letter-spacing: 4px;
+ }
+ .seçao h2{
+    font-size: 60px;
+    font-style: italic;
+    letter-spacing: 3px;
+ }
+ ul{
+    list-style-type: none;
+    margin: auto;
+    padding: 0;
+    width: 300px;
+    align-items: center;
+    text-align: center;
+  }
+ li{
+  text-align: center;
+  align-items: center;
+  margin: auto;
+ } 
+
+li a{
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+    height: 70px;
+    margin: auto;
+    font-size: 40px;
+    font-style: italic;
+    text-align: center;
+    align-items: center;
+  }
+  
+li a:hover {
+    background-color: #555;
+    color: white;
+  }
+
+

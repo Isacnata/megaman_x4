@@ -1,0 +1,59 @@
+create database isac;
+
+use isac;
+
+CREATE TABLE chefes_megaman_x4 
+(    id INT AUTO_INCREMENT PRIMARY KEY,    nome VARCHAR(50) NOT NULL,    historia TEXT,   
+ area VARCHAR(50),    arma_tecnica VARCHAR(50), fraqueza VARCHAR(50),    img_path VARCHAR(255));
+
+INSERT INTO chefes_megaman_x4 (nome, historia, area, arma_tecnica, fraqueza, img_path) VALUES
+('Web Spider', 'Antes de sua carreira militar com a Repliforce, ele era um Maverick Hunter, pertencente à Unidade Especial 0. Quando a Repliforce começou sua guerra de independência, foi mandado para base da selva e ficou encarregado de guardar um poderoso canhão de raios ali escondido.', 'Jungle', 'Lightning Web/Raijingeki','Twin Slasher/Z-saber'  , '/imagens/web_spider.png'),
+
+
+INSERT INTO chefes_megaman_x4 (nome, historia, area, arma_tecnica, fraqueza, img_path) VALUES
+('Cyber Peacock', 'Ele era originalmente uma IA que protegia a rede de hackers antes de ser corrompido por Sigma. Ele então começa a corromper a rede e a si mesmo para chamar a atenção dos Maverick Hunters, pois como Split Mushroom, foi dada a ele a tarefa de testar as habilidades de X e Zero, através de uma série de testes e exercícios de treinamento.', 'Cyberspace', 'Aiming Laser/Rakuhouha', 'Soul Body/Ryuenjin', '/imagens/Cyber_Peacock.png'),
+('Storm Owl', 'Um dos generais mais engenhosos da Repliforce, Storm Owl considerava toda a equipe como uma família. Ele ficou extremamente ressentido quando ele e seus colegas foram taxados como Mavericks pelos caçadores. Após o golpe da Repliforce começar, ele lançou uma brigada aérea para desviar a atenção dos Maverick Hunters.', 'Air Forces', 'Double Cyclone/Tenkuuha', 'Aiming Laser/Rakuhouha', '/imagens/Storm_Owl.png');
+
+
+
+
+SELECT * FROM chefes_megaman_x4;
+
+DELETE FROM chefes_megaman_x4;
+
+DROP DATABASE isac;
+
+
+
+
+| Table             | Create Table                                                                                                                                                                                                                                                                                                                                                                         |
++-------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| chefes_megaman_x4 | CREATE TABLE `chefes_megaman_x4` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `nome` varchar(50) NOT NULL,
+  `historia` text DEFAULT NULL,
+  `area` varchar(50) DEFAULT NULL,
+  `arma_tecnica` varchar(50) DEFAULT NULL,
+  `fraqueza` varchar(50) DEFAULT NULL,
+  `img_path` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 |
+
+
+
+
+"area": "Volcano",
+    "arma_tecnica": "Rising Fire/Ryuenjin",
+    "fraqueza": "Double Cyclone/Raijingeki",
+    "historia": "Antigo membro da 14? Unidade de Combate Garra, ele traiu os Maverick Hunters, tornando-se um Maverick, tudo por uma chance de duelar com X e Zero.",
+    "id": 3,
+    "img_path": "/imagens/Magma_Dragoon.png",
+    "nome": "Magma Dragoon"
+
+
+
+
+
+
+
+

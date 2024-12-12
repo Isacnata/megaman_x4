@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/chefes.css' %}">
+    <title>Lista de Chefes</title>
+</head>
+<body>
+    
+    <h1 id="h1">Chefes de Megaman X4</h1>
+    
+    {% if chefes %}
+        <div class="cards-container">
+            {% for chefe in chefes %}
+                <div class="card">
+                    <h2>{{ chefe.nome }}</h2>
+                    <p><strong>História:</strong> {{ chefe.historia }}</p>
+                    <p><strong>Área:</strong> {{ chefe.area }}</p>
+                    <p><strong>Arma/Técnica:</strong> {{ chefe.arma_tecnica }}</p>
+                    <p><strong>Fraqueza:</strong> {{ chefe.fraqueza }}</p>
+                    {% if chefe.img_path %}
+                        <img src="{% static chefe.img_path %}" alt="{{ chefe.nome }}" class="chefe-img">
+                    {% endif %}
+                </div>
+            {% endfor %}
+        </div>
+    {% else %}
+        <p>Nenhum chefe encontrado.</p>
+    {% endif %}
+
+    <nav id="nav">
+        <ul>
+            <li><a href="{% url 'home' %}">Início</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
